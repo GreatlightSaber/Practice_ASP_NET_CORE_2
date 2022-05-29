@@ -1,5 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
+using NetCore.Core.Interfaces;
+using NetCore.Core.Svcs;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using NetCore.Services.Svcs;
@@ -14,6 +16,9 @@ builder.Services.AddControllersWithViews();
 //[껍데기]             [내용물]
 //IUser 인터페이스에 UserService 클래스 인스턴스 주입
 builder.Services.AddScoped<IUser, UserService>();
+builder.Services.AddScoped<IResource, ResourceService>();
+builder.Services.AddScoped<IJsonManagement, JsonManagementService>();
+
 // DB접속정보, Migration 프로젝트 지정
 builder.Services.AddDbContext<DbFirstDbContext>(options => options.UseNpgsql("name=ConnectionStrings:DataAccessPostgreSqlProvider")) ;
 

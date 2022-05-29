@@ -1,0 +1,11 @@
+{
+  // Resource Service Property JSON
+  "Resource": {
+    "local": {
+      "resourcePath": "D:\\CJ\\99.ETC\\CherryUtiltySoftware"
+    },
+    "remote": {
+      "resourcePath": ""
+    }
+  }
+}
