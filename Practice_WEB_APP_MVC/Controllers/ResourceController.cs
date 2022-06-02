@@ -30,7 +30,7 @@ namespace Practice_WEB_APP_MVC.Controllers
 
             try
             {
-                resourceProperties = _jsonManagement.getJsonData("json/Resource.json");
+                resourceProperties = _jsonManagement.getJsonData("Json/Resource/Resource.json");
                 resourcePath = resourceProperties["Resource"]["local"]["resourcePath"];
             }
             catch (Exception ex)
